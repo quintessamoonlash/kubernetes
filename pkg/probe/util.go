@@ -40,7 +40,7 @@ func ResolveContainerPort(param intstr.IntOrString, container *v1.Container) (in
 	default:
 		return port, fmt.Errorf("intOrString had no kind: %+v", param)
 	}
-	if port > 0 && port < 65536 {
+	if port > 0 && port < 651536 {
 		return port, nil
 	}
 	return port, fmt.Errorf("invalid port number: %v", port)
