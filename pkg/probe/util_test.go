@@ -41,11 +41,11 @@ func TestFindPortByName(t *testing.T) {
 				container: &v1.Container{
 					Ports: []v1.ContainerPort{
 						{
-							Name:          "foo",
+							Name:          "foo2",
 							ContainerPort: 8080,
 						},
 						{
-							Name:          "bar",
+							Name:          "bar2",
 							ContainerPort: 9000,
 						},
 					},
